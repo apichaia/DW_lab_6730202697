@@ -1,0 +1,129 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: "Northwind dataset from local CSV files"
+    meta:
+      # กำหนด Path กลาง ให้ดึงไฟล์ตามชื่อตาราง {name}.csv โดยอัตโนมัติ
+      external_location: '/workspaces/DW_lab_6730202697/datasets/{name}.csv'
+
+    tables:
+      # 1. Customer
+      - name: customer
+        description: "Customer data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/customer.csv'
+
+      # 2. Employee Privileges
+      - name: employee_privileges
+        description: "Employee privileges data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/employee_privileges.csv'
+
+      # 3. Employees
+      - name: employees
+        description: "Employees data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/employees.csv'
+
+      # 4. Inventory Transaction Types
+      - name: inventory_transaction_types
+        description: "Inventory transaction types data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/inventory_transaction_types.csv'
+
+      # 5. Inventory Transactions
+      - name: inventory_transactions
+        description: "Inventory transactions data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/inventory_transactions.csv'
+
+      # 6. Invoices
+      - name: invoices
+        description: "Invoices data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/invoices.csv'
+
+      # 7. Order Details Status
+      - name: order_details_status
+        description: "Order details status data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/order_details_status.csv'
+
+      # 8. Order Details
+      - name: order_details
+        description: "Order details data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/order_details.csv'
+
+      # 9. Orders Status
+      - name: orders_status
+        description: "Orders status data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/orders_status.csv'
+
+      # 10. Orders Tax Status
+      - name: orders_tax_status
+        description: "Orders tax status data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/orders_tax_status.csv'
+
+      # 11. Orders
+      - name: orders
+        description: "Orders data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/orders.csv'
+
+      # 12. Privileges
+      - name: privileges
+        description: "Privileges data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/privileges.csv'
+
+      # 13. Products
+      - name: products
+        description: "Products data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/products.csv'
+
+      # 14. Purchase Order Details
+      - name: purchase_order_details
+        description: "Purchase order details data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/purchase_order_details.csv'
+
+      # 15. Purchase Order Status
+      - name: purchase_order_status
+        description: "Purchase order status data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/purchase_order_status.csv'
+
+      # 16. Purchase Orders
+      - name: purchase_orders
+        description: "Purchase orders data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/purchase_orders.csv'
+
+      # 17. Sales Reports
+      - name: sales_reports
+        description: "Sales reports data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/sales_reports.csv'
+
+      # 18. Shippers
+      - name: shippers
+        description: "Shippers data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/shippers.csv'
+
+      # 19. Strings
+      - name: strings
+        description: "Strings data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/strings.csv'
+
+      # 20. Suppliers
+      - name: suppliers
+        description: "Suppliers data"
+        meta:
+          external_location: '/workspaces/DW_lab_6730202697/datasets/suppliers.csv'
